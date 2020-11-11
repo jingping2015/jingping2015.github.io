@@ -10,17 +10,17 @@
     data-href="https://www.facebook.com/FB-Test-Page-PageTarget-110193787566839"
     data-action="like">
   </div>
-  <pre id="result"></pre>
-  <script type="text/javascript">
+<p>My first paragraph.</p>
+<pre id="result"></pre>
+<script type="text/javascript">
 window.addEventListener('message', (e) => {
     console.log('message: ', e.data);
     let result = e.data;
 document.querySelector('#result').textContent += `${result}\n\n`;
 })
-</script>
   
-  <p><a href="index-login.html">Test Login</a></p>
+  <!--  <p><a href="index-login.html">Test Login</a></p>  -->
 
-  <p><a href="comment-plugin.html">Test Comment</a></p>
+  <!--  <p><a href="comment-plugin.html">Test Comment</a></p> -->
 </body>
 </html>
