@@ -3,15 +3,22 @@
 
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.jingping.sb.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
 
   <!-- Your like button code -->
   <div class="fb-like"
     data-href="https://www.facebook.com/FB-Test-Page-PageTarget-110193787566839"
-    data-layout="standard"
     data-action="like">
   </div>
-
+  <pre id="result"></pre>
+  <script type="text/javascript">
+window.addEventListener('message', (e) => {
+    console.log('message: ', e.data);
+    let result = e.data;
+document.querySelector('#result').textContent += `${result}\n\n`;
+})
+</script>
+  
   <p><a href="index-login.html">Test Login</a></p>
 
   <p><a href="comment-plugin.html">Test Comment</a></p>
