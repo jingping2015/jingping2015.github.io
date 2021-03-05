@@ -2,31 +2,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta property="og:url" content="https://jingping2015.github.io/like-plugin.html" />
-    <meta property="og:title" content="Test" />
-    <meta property="og:description" content="testing page leak likes" />
-   
-    <meta property="og:type" content="webapplication"/>
-    <meta property="og:site_name" content="MY TEST SITE FOR LEAKS"/>
+  <title>Like Plugin</title>
+  <meta property="og:url"           content="https://jingping2015.github.io/like-plugin.html" />
+  <meta property="og:type"          content="website" />
 </head>
 <body>
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=668711654033278&autoLogAppEvents=1" nonce="D7pNgxus"></script>
 
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
+             &version=v10.0"
+        nonce="FOKrbAYI">
+  </script>
 
-<div class="fb-like" data-href="https://www.facebook.com/FB-Test-Page-PageTarget-110193787566839" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+  <!-- Your like button code -->
+  <div class="fb-like"
+       data-href="https://jingping2015.github.io/like-plugin.html"
+       data-width=""
+       data-layout="standard"
+       data-action="like"
+       data-size="small">
+  </div>
 
-
-
-<h1>Test customer chat plugin</h1>
-<p>My first paragraph.</p>
-<pre id="result"></pre>
-<script type="text/javascript">
-window.addEventListener('message', (e) => {
-    console.log('message: ', e.data);
-    let result = e.data;
-document.querySelector('#result').textContent += `${result}\n\n`;
-})
-</script>
 </body>
 </html>
